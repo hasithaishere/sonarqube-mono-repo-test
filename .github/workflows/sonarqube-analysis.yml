@@ -37,5 +37,5 @@ jobs:
       with:
         host: ${{ secrets.SONARQUBE_HOST }}
         login: ${{ secrets.SONARQUBE_TOKEN }}
-        projectBaseDir: "frontend"
+        projectBaseDir: "/github/workspace/frontend"
         projectKey: "Frontend"
