@@ -1,0 +1,15 @@
+# .github/dependabot.yml
+version: 2
+updates:
+  - package-ecosystem: 'npm'
+    directory: 'api-one/'
+    schedule:
+      interval: 'daily'
+  - package-ecosystem: 'npm'
+    directory: 'api-two/'
+    schedule:
+      interval: 'daily'
+  - package-ecosystem: 'npm'
+    directory: 'frontend/'
+    schedule:
+      interval: 'daily'
