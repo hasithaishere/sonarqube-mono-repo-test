@@ -23,19 +23,19 @@ jobs:
       with:
         host: ${{ secrets.SONARQUBE_HOST }}
         login: ${{ secrets.SONARQUBE_TOKEN }}
-        projectBaseDir: "./api-one/"
+        projectBaseDir: "/github/workspace/api-one"
         projectKey: "Api-One"
     - name: SonarQube API Two Analysis
       uses: kitabisa/sonarqube-action@master
       with:
         host: ${{ secrets.SONARQUBE_HOST }}
         login: ${{ secrets.SONARQUBE_TOKEN }}
-        projectBaseDir: "./api-two/"
+        projectBaseDir: "/github/workspace/api-two"
         projectKey: "Api-Two"
     - name: SonarQube Frontend Analysis
       uses: kitabisa/sonarqube-action@master
       with:
         host: ${{ secrets.SONARQUBE_HOST }}
         login: ${{ secrets.SONARQUBE_TOKEN }}
-        projectBaseDir: "./frontend/"
+        projectBaseDir: "frontend"
         projectKey: "Frontend"
