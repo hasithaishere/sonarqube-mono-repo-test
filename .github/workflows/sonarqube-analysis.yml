@@ -24,6 +24,7 @@ jobs:
         host: ${{ secrets.SONARQUBE_HOST }}
         login: ${{ secrets.SONARQUBE_TOKEN }}
         projectBaseDir: "/github/workspace/api-one"
+        projectName: "POC Api One"
         projectKey: "Api-One"
     - name: SonarQube API Two Analysis
       uses: kitabisa/sonarqube-action@master
@@ -31,6 +32,7 @@ jobs:
         host: ${{ secrets.SONARQUBE_HOST }}
         login: ${{ secrets.SONARQUBE_TOKEN }}
         projectBaseDir: "/github/workspace/api-two"
+        projectName: "POC Api Two"
         projectKey: "Api-Two"
     - name: SonarQube Frontend Analysis
       uses: kitabisa/sonarqube-action@master
@@ -38,4 +40,5 @@ jobs:
         host: ${{ secrets.SONARQUBE_HOST }}
         login: ${{ secrets.SONARQUBE_TOKEN }}
         projectBaseDir: "/github/workspace/frontend"
+        projectName: "POC Frontend"
         projectKey: "Frontend"
