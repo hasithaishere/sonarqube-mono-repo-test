@@ -22,6 +22,13 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 
+var unused = 15;
+
+let x = 10;
+let y = 20;
+let text = "x * y";
+let result = eval(text);
+
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   next(createError(404));
